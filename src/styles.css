@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+/* Heading Font */
+@font-face {
+  font-family: "Oswald";
+  src: url("assets/fonts/Oswald/Oswald-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+/* Body Font */
+@font-face {
+  font-family: "Yaldevi";
+  src: url("assets/fonts/Yaldevi/Yaldevi-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+/* Color Scheme */
+:root {
+  --color-dark: #707070;
+  --color-light: #ffffff;
+  --color-grey: #f6f9f9;
+
+  --color-primary: #e76f51;
+  --color-secondary: #f4a261;
+  --color-tertiary: #e9c46a;
+  --complementary-color-primary: #2a9d8f;
+  --complementary-color-secondary: #264653;
+}
+
+/* Default CSS */
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yaldevi", Arial, Helvetica, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", Georgia, "Times New Roman", Times, serif !important;
+  font-weight: bold;
+}
+
+app-root {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+app-footer {
+  margin-top: auto;
+}
+
+
+
+.bg-grey {
+  background-color: var(--color-grey)!important;
+}
+
+.custom-bg-primary {
+  background-color: var(--color-primary)!important;
+}
+
+.custom-bg-com-primary {
+  background-color: var(--complementary-color-primary)!important;
+}
+
+.custom-color-primary {
+  color: var(--color-primary)!important;
+}
+
+.custom-border-primary {
+  border: 2px solid var(--color-primary)!important;
+}

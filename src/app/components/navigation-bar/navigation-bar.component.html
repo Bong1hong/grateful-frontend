@@ -1,0 +1,121 @@
+<nav id="main-nav" class="navbar navbar-expand-lg navbar-light shadow-sm">
+  <div class="container">
+    <a id="navbar-logo" class="navbar-brand fw-bold" [routerLink]="['/']"
+      >Grateful</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      Menu
+      <i class="bi-list"></i>
+    </button>
+    <div
+      class="collapse navbar-collapse offset-md-4 justify-content-between"
+      id="navbarResponsive"
+    >
+      <ul class="navbar-nav me-4 my-3 my-lg-0">
+        <li class="nav-item text-center">
+          <a
+            class="nav-link dropdown-toggle"
+            id="studentDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Student</a
+          >
+          <ul
+            class="
+              dropdown-menu
+              animate
+              slideIn
+              w-100
+              py-5
+              mt-0
+              shadow-sm
+              custom-border-primary
+            "
+            aria-labelledby="studentDropdown"
+          >
+            <div class="container text-center">
+              <div class="col-md-4">
+                <li>
+                  <a
+                    class="dropdown-item custom-dropdown-item"
+                    [routerLink]="['/profile']"
+                    routerLinkActive="active"
+                    >Profile</a
+                  >
+                </li>
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+            </div>
+          </ul>
+        </li>
+        <div id="vertical-primary-line"></div>
+        <li class="nav-item text-center">
+          <a
+            class="nav-link dropdown-toggle"
+            id="lenderDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Lender</a
+          >
+          <ul
+            class="
+              dropdown-menu
+              animate
+              slideIn
+              w-100
+              py-5
+              mt-0
+              shadow-sm
+              custom-border-primary
+            "
+            aria-labelledby="lenderDropdown"
+          >
+            <div class="container text-center">
+              <div class="col-md-4">
+                <li>
+                  <a
+                    class="dropdown-item custom-dropdown-item"
+                    [routerLink]="['/scholarship']"
+                    routerLinkActive="active"
+                    >Scholarship Requests</a
+                  >
+                </li>
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+            </div>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-4 my-3 my-lg-0">
+        <li class="nav-item btn rounded-pill mb-2 mb-lg-0">
+          <a
+            class="text-reset text-decoration-none small"
+            [routerLink]="['/signup']"
+            routerLinkActive="active"
+            >Sign Up</a
+          >
+        </li>
+        <li id="login-btn" class="nav-item btn rounded-pill px-3 mb-2 mb-lg-0">
+          <a
+            class="text-reset text-decoration-none small"
+            [routerLink]="['/login']"
+            routerLinkActive="active"
+            ><i class="bi-box-arrow-in-right me-2"></i>Log In</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

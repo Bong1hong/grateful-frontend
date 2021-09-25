@@ -1,0 +1,16 @@
+.page-link-number {
+  color: var(--color-dark);
+  border-radius: 40%;
+  border-width: 1px!important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-link-number:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.page-link-prev:hover, .page-link-next:hover {
+  background-color: transparent;
+}

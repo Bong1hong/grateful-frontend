@@ -1,0 +1,12 @@
+.bg-primary-banner {
+  height: 200px;
+  margin-bottom: -100px;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+.bg-primary-document-banner {
+  height: 50px;
+  margin-bottom: -25px;
+  border-radius: 15px;
+}
